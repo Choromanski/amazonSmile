@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "Amazon Smile",
+  "version": "1.0",
+
+  "description": "Automatically redirects amazon.com to smile.amazon.com",
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.amazon.com/*"],
+      "js": ["amazonSmile.js"],
+      "run_at": "document_start"
+    }
+  ]
+
+}
